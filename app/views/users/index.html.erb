@@ -1,0 +1,6 @@
+<h1> Welcome To Tinder, Find Your Match!🥰🥰🥰🥰</h1>
+
+
+<% @users.each do |user| %>
+<li> <%= link_to user.name, user_path(user.id) %> </li>
+<%end%>
