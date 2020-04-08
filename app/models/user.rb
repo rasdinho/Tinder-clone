@@ -3,7 +3,7 @@ class User < ApplicationRecord
         :foreign_key => 'requester_id'
     has_many :matchee, :class_name => 'Match', 
         :foreign_key => 'requestee_id'
-end 
+end  
 
 
 

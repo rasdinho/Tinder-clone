@@ -1,6 +1,19 @@
-<h1> Welcome To Tinder, Find Your Match!🥰🥰🥰🥰</h1>
+<head>
+</head>
 
+<body>
+<div class="box">
+<div style = "text-align: center; background-color: rgb(255,153,153); font-family: Arial; box-shadow: 5px 5px 5px red;">
+<h1> Welcome To Tinder, Find Your Match!🥰🥰🥰🥰</h1>
+</div>
 
 <% @users.each do |user| %>
-<li> <%= link_to user.name, user_path(user.id) %> </li>
+<div style = "text-align: center; background-color: rgb(245,225,225);padding-top: 5px; box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1); 
+ font-size:20px; box-shadow: 5px 5px 5px black; border-radius: 20px;  margin-left: 30%; margin-right: 30%; padding-bottom: 5px";>
+<p> <%= link_to user.name, user_path(user.id) %> </p>
+</div>
 <%end%>
+
+</div>
+
+</body>
